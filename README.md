@@ -16,11 +16,6 @@ Adds **salvage recipes for runes** so you can break unwanted runes back down int
 
 Aoe Up, Chain Hook, Charged Shot, Duration Up, Enrage, Fireball, Fork, Ground Slam, Poison Imbue, Quickening, Rend, Ricochet, Thrift, Wind Strike, Wither
 
-## Compatibility
-
-- Hytale `release` 0.7.x
-- Server-side data pack. Players do not need to install anything
-
 ## Installation
 
 1. Download the latest `RuneSalvage-<version>.zip` from the releases page
@@ -44,3 +39,5 @@ Suggestions, ideas, and feedback are welcome.
 ### Reddit: [Marggx](https://l.marggx.dev/reddit)
 
 ### YouTube: [Marggx](https://l.marggx.dev/yt)
+
+### Patreon: [Marggx](https://l.marggx.dev/patreon)
