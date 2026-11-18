@@ -1,0 +1,25 @@
+{
+  "Input": [
+    {
+      "ItemId": "Rune_ChargedShot",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Rune_Shard",
+    "Quantity": 2
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Rune_Shard",
+      "Quantity": 2
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

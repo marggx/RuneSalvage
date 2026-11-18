@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update version in manifest.json
+        run: |
+          VERSION="${GITHUB_REF_NAME}"
+          jq --arg v "$VERSION" '.Version = $v' manifest.json > manifest.tmp
+          mv manifest.tmp manifest.json
+          echo "Packaging version: ${VERSION}"
+
+      - name: Package data pack
+        run: |
+          mkdir -p build
+          zip -r "build/RuneSalvage-${GITHUB_REF_NAME}.zip" manifest.json icon-256.png Server
+
+      - name: Commit and push updated files
+        run: |
+          git config user.name "[bot]release"
+          git config user.email "release+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git commit -m "build(release): bump version to ${GITHUB_REF_NAME}" || echo "Nothing to commit"
+          git push origin HEAD:${{ github.event.repository.default_branch }}
+
+      - name: Upload artifacts to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/*.zip

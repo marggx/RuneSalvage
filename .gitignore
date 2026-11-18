@@ -1,0 +1,10 @@
+### Mac OS ###
+.DS_Store
+
+### Build ###
+build/
+*.zip
+
+### IDE ###
+.idea/
+.vscode/

@@ -1,0 +1,25 @@
+{
+  "Input": [
+    {
+      "ItemId": "Rune_Ricochet",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Rune_Shard",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Rune_Shard",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}
