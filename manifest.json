@@ -1,21 +1,21 @@
 {
-    "Group": "Marggx",
-    "Name": "RuneSalvage",
-    "Version": "1.0.0",
-    "Description": "Adds salvage recipes so runes can be salvaged back into rune shards at the Salvage Bench.",
-    "Authors": [
-        {
-            "Name": "Marggx",
-            "Email": "hytale@marggx.dev",
-            "Url": "marggx.dev"
-        }
-    ],
-    "Website": "marggx.dev",
-    "ServerVersion": "^0.7.0",
-    "Dependencies": {},
-    "OptionalDependencies": {},
-    "LoadBefore": {},
-    "DisabledByDefault": false,
-    "IncludesAssetPack": true,
-    "SubPlugins": []
+  "Group": "Marggx",
+  "Name": "RuneSalvage",
+  "Version": "1.0.1",
+  "Description": "Adds salvage recipes so runes can be salvaged back into rune shards at the Salvage Bench.",
+  "Authors": [
+    {
+      "Name": "Marggx",
+      "Email": "hytale@marggx.dev",
+      "Url": "marggx.dev"
+    }
+  ],
+  "Website": "marggx.dev",
+  "ServerVersion": "^0.7.0",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": []
 }
